@@ -15,7 +15,6 @@ export async function analyzeImage(image: string, context?: string) {
 
     quero que me retorne apenas o texto exatamente como está escrito escrito na imagem!
     `
-    console.log("🚀 ~ analyzeImage ~ prompt:", prompt)
     const regex = /^data:(.*?);base64/
     const mimeType = image.match(regex)?.toString().split(',').at(-1)
 

@@ -1,45 +1,52 @@
-# Img to Text
+# ✨ Img to Text ✨
 
-Este projeto foi criado em um momento em que minha mãe, que é professora, estava trabalhando em um projeto incrível para incentivar a escrita e a criatividade dos alunos dela. Ela ajudou cada aluno a escrever o próprio livro à mão, e no final, todos eles entregaram suas histórias em folhas de papel. 
+Este projeto surgiu de uma necessidade muito especial: minha mãe, que é professora, estava desenvolvendo um projeto incrível para incentivar a escrita e a criatividade dos alunos. Cada um deles escreveu seu próprio livro à mão, entregando suas histórias em folhas de papel.
 
-Minha mãe precisava então digitar cada um desses livros para enviar ao sistema, o que seria um trabalho imenso, já que seriam cerca de 20 a 30 livros, e ela levaria de 3 a 4 dias digitando manualmente.
+Ela precisava digitar todas essas histórias para enviar ao sistema, o que seria uma tarefa imensa — cerca de 20 a 30 livros, que levariam de 3 a 4 dias para serem digitados manualmente! 📝
 
-Foi nesse momento que eu pensei: "Por que não usar uma inteligência artificial para transcrever o que está escrito nas folhas?" Assim, decidi assumir essa tarefa, mas de uma forma mais eficiente. Em cerca de 2 horas, desenvolvi este site que transcreve automaticamente o texto das fotos usando a API Gemini da Google.
+Foi aí que eu pensei: **"Por que não deixar essa tarefa para a inteligência artificial?"** Em apenas **2 horas**, desenvolvi este site para transcrever automaticamente o texto das fotos usando a **API Gemini da Google**.
 
-O que teria sido um trabalho de dias, foi feito em apenas 1 dia com a ajuda desse sistema!
+O que parecia um trabalho de dias foi concluído em apenas 1 dia com a ajuda desse sistema! 🚀
 
-## Tecnologias Utilizadas
+---
+
+## 🔧 Tecnologias Utilizadas
 
 - **Node.js**
 - **Express**
 - **TypeScript**
 - **API Gemini (Google)**
 
-## Funcionalidades
+---
 
-- Upload de imagens para o site.
-- Transcrição automática do texto presente nas imagens.
-- Simplicidade no uso, com um layout limpo.
-- Botão para copiar o texto transcrito diretamente para a área de transferência.
+## 💡 Funcionalidades
 
-## Como Rodar o Projeto
+- Upload de imagens 📸
+- Transcrição automática do texto presente nas imagens 📝
+- Layout simples e funcional 💻
+- **Botão** para copiar o texto transcrito diretamente para a área de transferência 📋
+
+---
+
+## 🚀 Como Rodar o Projeto
 
 ### Pré-requisitos
 
-Você precisará ter o **Node.js** instalado e uma chave de API da **Gemini API (Google)**. Para gerar essa chave, siga este tutorial oficial: [Google Gemini API - Tutorial](https://ai.google.dev/gemini-api/docs/get-started/tutorial?hl=pt-br&lang=node).
+- Ter o **Node.js** instalado.
+- Obter uma chave de API da **Gemini API (Google)**. Você pode gerar a sua seguindo este tutorial: [Google Gemini API - Tutorial](https://ai.google.dev/gemini-api/docs/get-started/tutorial?hl=pt-br&lang=node).
 
 ### Passo a Passo
 
 1. **Clone o repositório:**
 
    ```bash
-   git clone <URL-do-repositório>
-   cd <nome-do-repositório>
+   git clone https://github.com/Kaduh15/img-to-text.git
+   cd img-to-text
    ```
 
 2. **Instale as dependências:**
 
-   Eu usei **pnpm**, mas você pode usar **npm** ou **yarn** sem problemas.
+   Eu usei **pnpm**, mas você também pode utilizar **npm** ou **yarn**:
 
    ```bash
    pnpm install
@@ -53,9 +60,9 @@ Você precisará ter o **Node.js** instalado e uma chave de API da **Gemini API 
 
 3. **Crie o arquivo `.env`:**
 
-   Dentro da pasta do projeto, crie um arquivo `.env` com a sua chave de API da Google Gemini:
+   Dentro da pasta do projeto, crie um arquivo `.env` e adicione a sua chave da API Gemini:
 
-   ```
+   ```bash
    GEMINI_API_KEY=sua_chave_da_api_gemini
    ```
 
@@ -75,23 +82,32 @@ Você precisará ter o **Node.js** instalado e uma chave de API da **Gemini API 
 
 5. **Acesse o site:**
 
-   Agora, basta abrir o navegador e acessar o seguinte endereço:
+   Abra o navegador e acesse:
 
-   ```
+   ```bash
    http://localhost:3000
    ```
 
-6. **Fazendo o Build:**
+6. **Fazer o Build:**
 
-   Se quiser fazer o build para produção, rode:
+   Caso queira fazer o build para produção, rode:
 
    ```bash
    pnpm build
    ```
 
-   ou o comando correspondente ao gerenciador de pacotes que estiver usando.
+   ou o equivalente com **npm** ou **yarn**.
 
 ---
 
-Esse projeto foi uma solução rápida que me poupou horas de trabalho e tornou a tarefa de transcrição muito mais fácil e eficiente para minha mãe. Agora, espero que ele possa ajudar outras pessoas também!
+## 🎉 Conclusão
 
+Esse projeto foi uma solução rápida e prática que me economizou **horas** de trabalho manual. Ele facilitou a tarefa de transcrição para minha mãe e acredito que pode ajudar muitas outras pessoas com uma necessidade semelhante.
+
+Se você precisa de algo rápido e funcional para transcrever imagens em texto, este projeto pode ser exatamente o que você está procurando! 😊
+
+---
+
+### 🤝 Contribuições
+
+Se você quiser colaborar com melhorias ou sugestões, sinta-se à vontade para abrir uma **issue** ou enviar um **pull request**. Toda ajuda é bem-vinda!

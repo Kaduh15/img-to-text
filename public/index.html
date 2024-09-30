@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Img to Text</title>
+</head>
+<body>
+  <main>
+    <h1>Img to Text</h1>
+    
+    <section id="image-container">
+      <label for="image">Selecione uma imagem</label>
+      <input type="file" id="image" name="image" capture>
+      <div class="image-info">
+        <span>Total de imagens: <span id="total-images">0</span></span>
+      </div>
+
+      <textarea name="context" id="context" ></textarea>
+    </section>
+    
+    <section id="images-list"></section>
+    
+    <section class="actions">
+      <button type="button" id="transcription">Transcrever</button>
+      <button hidden type="button" id="clean-images">Limpar</button>
+      <button hidden type="button" id="copy-text">Copiar Texto</button>
+    </section>
+
+    <section>
+      <p hidden id="text"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
